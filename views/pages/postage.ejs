@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postage Calculator</title>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav2.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    
+      <img src="/682204-T0.jpg">
+	  <img src="/569004-T0.jpg">
+	  <img src="/681204-T0.jpg">
+	  <img src="/682104-T0.jpg">
+    
+   </div>
+</div>
+<div class="container">
+  <div class="alert alert-info text-center" role="alert">
+    Postal Calculator
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> Use these form to calculate your postage:</h3>
+	  
+	  <p><h2>Letters (Stamped)</h2>
+	  <form action="/postage_amount">
+	  	   	  <input type = "hidden"  name= "postageType" value ="Letters (Stamped)">
+	  	  Weight Not Over (oz.)<br>
+		<select name="weight">
+			<option value="1">1 oz.</option>
+			<option value="2">2 oz.</option>
+			<option value="3">3 oz.</option>
+			<option value="3.5">3.5 oz.</option>
+		</select>
+			<br><br>
+		<input type="submit">
+		</form>
+		</p><br><br>
+		
+			  <p><h2>Letters (Metered)</h2>
+	  <form action="/postage_amount">
+	  	   	  <input type = "hidden"  name= "postageType" value ="Letters (Metered)">
+	  Weight Not Over (oz.)<br>
+		<select name="weight">
+			<option value="1">1 oz.</option>
+			<option value="2">2 oz.</option>
+			<option value="3">3 oz.</option>
+			<option value="3.5">3.5 oz.</option>
+		</select>
+			<br><br>
+		<input type="submit">
+			</form>
+		</p><br><br>
+		
+			  <p><h2>Large Envelopes (Flats)</h2>
+	  <form action="/postage_amount">
+	   	  <input type = "hidden"  name= "postageType" value ="Large Envelopes">
+	  	  Weight Not Over (oz.)<br>
+		<select name="weight">
+			<option value="1">1 oz.</option>
+			<option value="2">2 oz.</option>
+			<option value="3">3 oz.</option>
+			<option value="4">4 oz.</option>
+			<option value="5">5 oz.</option>
+			<option value="6">6 oz.</option>
+			<option value="7">7 oz.</option>
+			<option value="8">8 oz.</option>
+			<option value="9">9 oz.</option>
+			<option value="10">10 oz.</option>
+			<option value="11">11 oz.</option>
+			<option value="12">12 oz.</option>
+			<option value="13">13 oz.</option>
+		</select>
+			<br><br>
+		<input type="submit">
+			</form>
+		</p><br><br>
+		
+			  <p><h2>First Class Package Service</h2>
+	  <form action="/postage_amount">
+	  <input type = "hidden"  name= "postageType" value ="First Class Package">
+	  	  Weight Not Over (oz.)<br>
+		<select name="weight">
+			<option value="1">1 oz.</option>
+			<option value="2">1 oz.</option>
+			<option value="3">2 oz.</option>
+			<option value="4">3 oz.</option>
+			<option value="5">4 oz.</option>
+			<option value="6">5 oz.</option>
+			<option value="7">6 oz.</option>
+			<option value="8">7 oz.</option>
+			<option value="9">8 oz.</option>
+			<option value="10">9 oz.</option>
+			<option value="11">10 oz.</option>
+			<option value="12">12 oz.</option>
+			<option value="13">13 oz.</option>
+		</select>
+			<br><br>
+		<input type="submit">
+			</form>
+		</p><br><br>
+
+
+    </div>
+
+  </div> <!-- row -->
+   <div class="alert alert-info text-center" role="alert">
+    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
+  </div>
+</div>
+
+
+</body>
+</html>
